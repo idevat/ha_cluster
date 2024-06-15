@@ -21,9 +21,6 @@
             ha_cluster_cluster_name: test-cluster
             ha_cluster_manage_firewall: true
             ha_cluster_manage_selinux: true
-            # Property placement-strategy must be set accordingly. When not set,
-            # there is an extra warning in the `pcs node|resource utilization`
-            # result.
             ha_cluster_alerts:
               - id: alert1
                 description: Alert1 description

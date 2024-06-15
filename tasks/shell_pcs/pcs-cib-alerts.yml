@@ -37,9 +37,9 @@
       --
       alert recipient add
       {{ alert.id | quote }}
-      value={recipient.value}
-      id={recipient.id}
-      description={recipient.description}
+      value={{ recipient.value | quote }}
+      id={{ recipient.id | quote }}
+      description={{ recipient.description | quote }}
       {% if recipient.instance_attrs[0].attrs | d([]) %}
         options
         {% for attr in recipient.instance_attrs[0].attrs %}
